@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Provider - Fix Everything</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (copy from index.html) -->
+    <nav class="bg-cyan-600 text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">Fix Everything</div>
+        <div class="flex gap-6">
+            <a href="index.html" class="hover:underline">HOME</a>
+            <a href="#" class="hover:underline">CATEGORIES</a>
+            <a href="add-provider.html" class="hover:underline">ADD PROVIDER</a>
+        </div>
+    </nav>
+     <!-- Add Provider Form Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
+            <!-- Form Header -->
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Add New Provider</h1>
+            <p class="text-gray-600 mb-8">Fill in the details to add a service provider</p>
+
+            <!-- Form starts here -->
+            <form>
+                <!-- Provider Name -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Provider Name *
+                    </label>
+                    <input 
+                        type="text" 
+                        placeholder="e.g., Karim Electricals"
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none"
+                        required
+                    >
+                </div>
+            <!-- Business Name -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Business Name (Optional)
+                    </label>
+                    <input 
+                        type="text" 
+                        placeholder="e.g., Karim's Electrical Services"
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none"
+                    >
+                </div>
+                <!-- Category -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Service Category *
+                    </label>
+                    <select 
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none"
+                        required
+                    >
+                        <option value="">-- Select Category --</option>
+                        <option value="electrician">⚡ Electrician</option>
+                        <option value="plumber">🔧 Plumber</option>
+                        <option value="ac-repair">❄️ AC/Fridge Repair</option>
+                        <option value="locksmith">🔒 Locksmith</option>
+                        <option value="cleaner">🧹 House Cleaning</option>
+                        <option value="lift">🛗 Lift Technician</option>
+                    </select>
+                </div>
+                <!-- Phone Number -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Phone Number *
+                    </label>
+                    <input 
+                        type="tel" 
+                        placeholder="01712345678"
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none"
+                        required
+                    >
+                </div>
+                <!-- Neighborhood -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Neighborhood *
+                    </label>
+                    <select 
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none"
+                        required
+                    >
+                        <option value="">-- Select Neighborhood --</option>
+                        <option value="shyamoli">Shyamoli</option>
+                        <option value="mohammadpur">Mohammadpur</option>
+                        <option value="mirpur-1">Mirpur-1</option>
+                        <option value="mirpur-2">Mirpur-2</option>
+                        <option value="mirpur-10">Mirpur-10</option>
+                        <option value="mirpur-12">Mirpur-12</option>
+                        <option value="agargaon">Agargaon</option>
+                        <option value="gulshan">Gulshan</option>
+                        <option value="banani">Banani</option>
+                        <option value="dhanmondi">Dhanmondi</option>
+                        <option value="uttara">Uttara</option>
+                    </select>
+                </div>
+                <!-- Skill Range -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Skill level *
+                    </label>
+                    <div class="flex gap-6">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="skill" value="junior" class="mr-2" required>
+                            <span>(Junior)</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="skill" value="professional" class="mr-2">
+                            <span>(Professional)</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="skill" value="premium" class="mr-2">
+                            <span>(Premium Experienced)</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Description (Optional)
+                    </label>
+                    <textarea 
+                        rows="4"
+                        placeholder="Tell us about your services, experience, etc."
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-cyan-500 focus:outline-none resize-none"
+                    ></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="mt-8">
+                    <button 
+                        type="submit"
+                        class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition"
+                    >
+                        Add Provider
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (copy from index.html) -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+        <p>&copy; 2025 Fix Everything. All rights reserved.</p>
+    </footer>
+</body>
+</html>
